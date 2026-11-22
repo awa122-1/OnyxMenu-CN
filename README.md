@@ -234,6 +234,14 @@ python3 tools/patch_strings.py NocturneMenu_v1.3.0.dll output.dll \
         tools/translations/zh_CN.json --heap-offset 0xEA0F8 --heap-size 0x33AAC
 ```
 
+#如果有.csproj文件
+打开当前项目目录的顶部输入cmd
+输入以下命令：
+```bash
+dotnet build -c release
+```
+（注意：此方法需要dotnet sdk 6,7,8,9或是10）
+
 ### 原理简述
 
 .NET 元数据的 `#US`（User String）堆按「压缩长度前缀 + UTF-16 + 1 字节标志」
