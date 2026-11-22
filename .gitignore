@@ -1,0 +1,20 @@
+# ---- 上游原版文件（不重新分发，请去上游 Release 下载）----
+/NocturneMenu_v1.3.0.dll
+/NocturneMenu_*.dll
+*.dll.bak
+
+# ---- 构建中间产物 ----
+__pycache__/
+*.py[cod]
+*.zip
+/tmp/
+
+# ---- 本地工具与IDE ----
+.vscode/
+.idea/
+*.user
+
+# ---- 系统文件 ----
+.DS_Store
+Thumbs.db
+desktop.ini
